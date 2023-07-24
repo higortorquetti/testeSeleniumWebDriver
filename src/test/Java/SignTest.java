@@ -17,8 +17,8 @@ public class SignTest {
 
         navegator.manage().window().maximize();
         navegator.findElement(By.linkText("Sign in")).click();
-        navegator.findElement(By.id("signinbox")).findElement(By.name("login")).sendKeys("higortorquetti");
-        navegator.findElement(By.id("signinbox")).findElement(By.name("password")).sendKeys("123456");
+        navegator.findElement(By.id("signinbox")).findElement(By.name("login")).sendKeys("");
+        navegator.findElement(By.id("signinbox")).findElement(By.name("password")).sendKeys("");
         navegator.findElement(By.linkText("SIGN IN")).click();
         String saudacao = navegator.findElement(By.className("me")).getText();
         assertEquals("Hi, higor", saudacao);
