@@ -23,6 +23,6 @@ public class SignTest {
         String saudacao = navegator.findElement(By.className("me")).getText();
         assertEquals("Hi, higor", saudacao);
 
-       // navegator.quit();
+       navegator.quit();
     }
 }
